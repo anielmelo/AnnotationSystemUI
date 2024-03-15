@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    width: 10rem;
+    height: 2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+#btn-login {
+    background-color: rgb(220, 126, 243);
+    /* alterar o box shadow com click */
+    box-shadow: 3px 3px;
+}
+
+#title-login {
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 50%;
+    margin-right: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#title-login h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#account-access {
+    background-color: rgb(94, 233, 129);
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 50vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90%;
+}
+
+#login-form fieldset:nth-child(2), #login-form fieldset:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+    border: none;
+    width: 90%;
+    height: 70%;
+}
+
+#login-form .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.field input {
+    height: 2rem;
+    border-radius: 5px;
+    border: 2px solid black;
+}
