@@ -10,43 +10,61 @@
     <div id="title-login">
         <h1>Manage your notes!</h1>
     </div>
-    <div id="account-access">
-        <form id="login-form">
-            <h1>Login</h1>
-            <fieldset>
-                <div class="field">
-                    <label for="">Username: </label>
-                    <input type="text" name="nameCredential" id="nameCredential">
-                </div>
-                <div class="field">
-                    <label for="">Password: </label>
-                    <input type="password" name="password" id="password">
-                </div>
-            </fieldset>
-            <div class="button-access">
-                <button type="submit" id="btn-login">Access</button>
-            </div>
-        </form>
+    <div id="card-user">
+        <div id="tab-access">
+            <button id="tab-login" class="active">
+                login
+            </button>
+            <button id="tab-register">
+                register
+            </button>
+        </div>
+        <div id="account-access" class="login">
 
-        <!-- <form id="registerForm">
-            <fieldset>
-                <div class="field">
-                    <label for="">Username: </label>
-                    <input type="text" name="nameCredential" id="nameCredential">
-                </div>
-                <div class="field">
-                    <label for="">Name: </label>
-                    <input type="text" name="namePresentation" id="namePresentation">
-                </div>
-                <div class="field">
-                    <label for="">Password: </label>
-                    <input type="password" name="password" id="password">
-                </div>
-            </fieldset>
-            <div class="button-access">
-                <button type="submit" id="btn-register">register</button>
+            <div id="login-visibility" class="form-visibility-true">
+                <form id="login-form">
+                    <h1>Login</h1>
+                    <fieldset>
+                        <div class="field">
+                            <label for="">Username: </label>
+                            <input type="text" name="nameCredential" id="nameCredential">
+                        </div>
+                        <div class="field">
+                            <label for="">Password: </label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </fieldset>
+                    <div class="button-access">
+                        <button type="submit" id="btn-login">Access</button>
+                    </div>
+                </form>
             </div>
-        </form> -->
+
+            <div id="register-visibility" class="form-visibility-false">
+                <form id="register-form">
+                    <h1>Register</h1>
+                    <fieldset>
+                        <div class="field">
+                            <label for="nameCredential">Username: </label>
+                            <input type="text" name="nameCredential" id="nameCredential">
+                        </div>
+                        <div class="field">
+                            <label for="namePresentation">Name: </label>
+                            <input type="text" name="namePresentation" id="namePresentation">
+                        </div>
+                        <div class="field">
+                            <label for="password">Password: </label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </fieldset>
+                    <div class="button-access">
+                        <button type="submit" id="btn-register">register</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
     </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>

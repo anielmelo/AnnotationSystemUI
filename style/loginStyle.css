@@ -12,9 +12,8 @@ button {
     border: 2px solid black;
 }
 
-#btn-login {
-    background-color: rgb(220, 126, 243);
-    /* alterar o box shadow com click */
+#btn-login, #btn-register {
+    background-color: rgb(255, 221, 30);
     box-shadow: 3px 3px;
 }
 
@@ -32,23 +31,79 @@ button {
     font-size: 3rem;
 }
 
-#account-access {
-    background-color: rgb(94, 233, 129);
+#card-user {
     margin-left: 50%;
     margin-right: 50%;
-    margin-top: 50vh;
+    margin-top: 49vh;
     position: absolute;
     transform: translate(-50%, -50%);
+    height: 22rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+#account-access {
+    background-color: rgb(93, 144, 240);
     height: 20rem;
-    width: 20rem;
+    width: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     border: 2px solid black;
+    box-shadow: 2px 2px;
 }
 
-#login-form {
+#account-access.login {
+    background-color: rgb(93, 144, 240);
+}
+
+#account-access.register {
+    background-color: rgb(94, 233, 129);
+}
+
+#tab-access {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 0%;
+}
+
+#tab-access .active {
+    position: absolute;
+    height: 2.2rem;
+}
+
+#tab-access button {
+    margin-bottom: 0%;
+    margin-right: 0.5rem;
+    border-bottom: 0cap;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#tab-login {
+    background-color: rgb(93, 144, 240);
+}
+
+#tab-register {
+    margin-left: 10.2rem;
+    background-color: rgb(94, 233, 129);
+}
+
+.form-visibility-true {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form, #register-form {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -57,7 +112,8 @@ button {
     height: 90%;
 }
 
-#login-form fieldset:nth-child(2), #login-form fieldset:nth-child(2) {
+#login-form fieldset:nth-child(2), #login-form fieldset:nth-child(2), 
+#register-form fieldset:nth-child(2), #register-form fieldset:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -67,7 +123,7 @@ button {
     height: 70%;
 }
 
-#login-form .field {
+#login-form .field, #register-form .field {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -77,4 +133,8 @@ button {
     height: 2rem;
     border-radius: 5px;
     border: 2px solid black;
+}
+
+.form-visibility-false {
+    display: none;
 }
