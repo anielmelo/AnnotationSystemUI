@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+#main-annotation {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#title-main {
+    width: 70rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#welcome {
+    text-transform: uppercase;
+    font-size: 250%;
+}
+
+#create-main {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#create-annotation {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    filter: drop-shadow(-1px -2px black) drop-shadow(-1px 2px black) drop-shadow(4px 4px black); 
+}
+
+#create-annotation #bar-note {
+    flex: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+#bar-note #bar-rectangle {
+    background-color: rgb(255, 224, 50);
+    flex: 80%;
+    border-top-left-radius: 10px;
+}
+
+#bar-note #bar-triangle {
+    flex: 20%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#bar-note #bar-triangle > div {
+    border-top: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 22px solid rgb(252, 231, 111);
+    border-left: 24px solid rgb(252, 231, 111);
+}
+
+#create-annotation #content-note {
+    background-color: rgb(255, 224, 50);
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#content-note > button {
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px 10px;
+}
