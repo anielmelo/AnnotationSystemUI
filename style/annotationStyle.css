@@ -8,12 +8,12 @@
 
 #main-annotation {
     background-color: rgb(177, 135, 255);
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    border-bottom: 2px solid black;
 }
 
 #title-main {
@@ -70,8 +70,8 @@
 #bar-note #bar-triangle > div {
     border-top: 24px solid transparent;
     border-right: 24px solid transparent;
-    border-bottom: 22px solid rgb(255, 46, 46);
-    border-left: 24px solid rgb(255, 46, 46);
+    border-bottom: 22px solid crimson;
+    border-left: 24px solid crimson;
 }
 
 #create-annotation #content-note {
@@ -104,17 +104,15 @@
 }
 
 #list-annotations {
-    background-color: rgb(113, 113, 255);
+    /* background-color: rgb(113, 113, 255); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    width: 100vw;
-    /* height: 100vh; */
+    padding-bottom: 25px;
 }
 
 .title-list {
-    background-color: rgb(224, 101, 101);
+    /* background-color: rgb(224, 101, 101); */
     width: 70vw;
     height: 20vh;
     display: flex;
@@ -126,26 +124,135 @@
     padding-bottom: 10px;
 }
 
-.annotations {
-    background-color: aqua;
+.annotations > .all {
+    /* background-color: aqua; */
     width: 70vw;
-    /* height: 70vh; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 4rem;
+}
+
+.annotations > .all .note {
+    margin: auto;
+    /* width: 100%; */
 }
 
 .note {
-    width: 200px;
-    height: 100px;
-    background-color: black;
+    width: 350px;
+    height: 230px;
+    /* background-color: black; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.note > .header-note {
+    background-color: rgb(83, 241, 122);
+    width: 100%;
+    flex: 25%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+
+.header-note > .tag-header {
+    width: 100%;
+    flex: 65%;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-left: .8rem;
+    font-size: 26px;
+}
+
+.header-note > .btn-header {
+    width: 100%;
+    flex: 35%;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 26px;
+}
+
+.btn-header > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn-header #btn-note-expand {
+    background-color: rgb(255, 225, 55);
+}
+
+.btn-header #btn-note-delete {
+    background-color: rgb(243, 62, 62);
+}
+
+.note > .body-note {
+    background-color: rgb(245, 245, 208);
+    width: 100%;
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.body-note > .description {
+    width: 100%;
+    flex: 70%;
+    /* background-color: brown; */
+    overflow: hidden;
+    text-align: left;
+    line-height: 1.2em;
+    padding-left: .8rem;
+    padding-top: .8rem;
+    padding-right: .8rem;
+}
+
+.body-note > .info {
+    width: 100%;
+    flex: 30%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    padding-left: .8rem;
+}
+
+.info .created-at {
+    width: 100%;
+    flex: 55%;
+    /* background-color: blueviolet; */
+    font-style: italic;
+}
+
+.info .priority {
+    width: 100%;
+    flex: 45%;
+    /* background-color: rgb(104, 64, 64); */
+}
+
+.priority ul {
+    list-style-position: inside;
+}
 
 @media (max-width: 768px) {
     .note {
