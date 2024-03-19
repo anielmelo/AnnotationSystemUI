@@ -126,7 +126,7 @@
 
 .annotations > .all {
     /* background-color: aqua; */
-/*     width: 70svw; */
+    width: 70svw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 10px;
@@ -255,6 +255,10 @@
 }
 
 @media (max-width: 768px) {
+    .annotations > .all {
+        width: auto;
+    }
+    
     .note {
         width: 350px;
         height: 230px;
@@ -262,6 +266,10 @@
 }
 
 @media (max-width: 480px) {
+    .annotations > .all {
+        width: auto;
+    }
+    
     .note {
 /*         width: 100%; */
         height: 230px;
