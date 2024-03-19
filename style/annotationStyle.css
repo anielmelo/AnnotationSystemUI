@@ -8,7 +8,7 @@
 
 #main-annotation {
     background-color: rgb(177, 135, 255);
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +113,7 @@
 
 .title-list {
     /* background-color: rgb(224, 101, 101); */
-    width: 70vw;
+    width: 70svw;
     height: 20vh;
     display: flex;
     align-items: end;
@@ -126,7 +126,7 @@
 
 .annotations > .all {
     /* background-color: aqua; */
-    width: 70vw;
+    width: 70svw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 10px;
