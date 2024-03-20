@@ -21,12 +21,7 @@ button {
 }
 
 #title-login {
-    margin-top: 5%;
-    width: 70%;
-    margin-left: 50%;
-    margin-right: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+    width: auto;
 }
 
 #title-login h1 {
@@ -41,8 +36,8 @@ button {
     margin-top: 49vh;
     position: absolute;
     transform: translate(-50%, -50%);
-    height: 22rem;
-    width: 30rem;
+/*     height: 22rem;
+    width: 30rem; */
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -144,4 +139,14 @@ button {
 
 .form-visibility-false {
     display: none;
+}
+
+@media (max-width: 480px) {
+    #card-user {
+        margin-top: 25svh;
+    }
+    
+    #account-access {
+        width: 330px;
+    }
 }
