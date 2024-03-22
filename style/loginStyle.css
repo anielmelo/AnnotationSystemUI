@@ -144,13 +144,13 @@ button {
 
 @media (max-width: 768px) {
     #card-user {
-        margin-top: 30svh;
+        margin-top: 45svh;
     }
 }
 
 @media (max-width: 480px) {
     #card-user {
-        margin-top: 30svh;
+        margin-top: 45svh;
     }
     
     #account-access {
