@@ -17,7 +17,6 @@
 }
 
 #title-main {
-/*     width: 70rem; */
     height: 10rem;
     display: flex;
     flex-direction: column;
@@ -27,7 +26,7 @@
 
 #welcome {
     text-transform: uppercase;
-/*     font-size: 250%; */
+    text-align: center;
 }
 
 #create-main {
@@ -104,7 +103,6 @@
 }
 
 #list-annotations {
-    /* background-color: rgb(113, 113, 255); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +110,6 @@
 }
 
 .title-list {
-    /* background-color: rgb(224, 101, 101); */
     width: 70svw;
     height: 20vh;
     display: flex;
@@ -125,7 +122,6 @@
 }
 
 .annotations > .all {
-    /* background-color: aqua; */
     width: 70svw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -136,13 +132,11 @@
 
 .annotations > .all .note {
     margin: auto;
-    /* width: 100%; */
 }
 
 .note {
     width: 350px;
     height: 230px;
-    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,7 +158,6 @@
 .header-note > .tag-header {
     width: 100%;
     flex: 65%;
-    /* background-color: crimson; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -176,7 +169,6 @@
 .header-note > .btn-header {
     width: 100%;
     flex: 35%;
-    /* background-color: burlywood; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -215,7 +207,6 @@
 .body-note > .description {
     width: 100%;
     flex: 70%;
-    /* background-color: brown; */
     overflow: hidden;
     text-align: left;
     line-height: 1.2em;
@@ -227,7 +218,6 @@
 .body-note > .info {
     width: 100%;
     flex: 30%;
-    /* background-color: coral; */
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -240,14 +230,12 @@
 .info .created-at {
     width: 100%;
     flex: 55%;
-    /* background-color: blueviolet; */
     font-style: italic;
 }
 
 .info .priority {
     width: 100%;
     flex: 45%;
-    /* background-color: rgb(104, 64, 64); */
 }
 
 .priority ul {

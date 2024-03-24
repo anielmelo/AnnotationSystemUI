@@ -36,8 +36,6 @@ button {
     margin-top: 35svh;
     position: absolute;
     transform: translate(-50%, -50%);
-/*     height: 22rem;
-    width: 30rem; */
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -54,7 +52,7 @@ button {
     border-radius: 10px;
     border-top-left-radius: 0px;
     border: 2px solid black;
-    box-shadow: 2px 2px;
+    box-shadow: 3px 3px;
 }
 
 #account-access.login {
@@ -75,7 +73,7 @@ button {
 
 #tab-access .active {
     position: absolute;
-    height: 2.2rem;
+    height: 2.1rem;
 }
 
 #tab-access button {
@@ -115,6 +113,23 @@ button {
     height: 90%;
 }
 
+#login-form > span, #register-form > span {
+    width: 15%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 50,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 #login-form fieldset:nth-child(2), #login-form fieldset:nth-child(2), 
 #register-form fieldset:nth-child(2), #register-form fieldset:nth-child(2) {
     display: flex;
@@ -124,6 +139,10 @@ button {
     border: none;
     width: 90%;
     height: 70%;
+}
+
+#login-form, #register-form {
+    font-size: 20px;
 }
 
 #login-form .field, #register-form .field {
